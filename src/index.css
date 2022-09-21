@@ -1,0 +1,37 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #64ffda;
+  --light-color:#ccd6f6;
+  --gray-color:#8892b0;
+  --font-primary: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --golden-color: #ffdb15;
+}
+body {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: var(--font-primary);
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+ 
+}
+/* GLOBAL STYLES */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.text-blue {
+  color: var(--secondary-color);
+}

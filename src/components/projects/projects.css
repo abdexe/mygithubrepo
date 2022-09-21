@@ -1,0 +1,101 @@
+.projects {
+    margin: 5rem 1rem 0 1rem;
+}
+.projects span {
+    color: var(--secondary-color);
+}
+.projects .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.projects .container .card {
+    margin: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    background-color: #040d1b;
+    position: relative;   
+    transition: transform 0.5s ease-in;
+}
+.projects .container .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in;
+}
+.projects .container .card::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6)
+}
+.projects .container button {
+    padding: 1rem 2rem;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color:transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    transition: opacity .4s linear;
+    cursor: pointer;
+    left: 50%;
+    top: 10%;
+    transition: transform .4s; 
+    transform: translateX(-50%);
+}
+.projects .container button:hover {
+    opacity: 0.8;
+    transition: transform .4s ease-in; 
+}
+.projects .container .card img {
+    width: 100%;
+    height:200px;
+}
+.projects .container .card h3, .projects .container .card p {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    z-index: 100;
+}
+.projects .container .card h3 {
+    color: var(--secondary-color);
+}
+.projects .container .card p {
+    color: var(--gray-color);
+}
+.projects .container .card .softwares {
+    margin: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.projects .container .card .softwares ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.projects .container .card .softwares ul li {
+    margin-right: 1rem;
+    z-index: 100;
+}
+
+@media (max-width:600px) {
+    .projects .container {
+        flex-direction: column;
+        
+    }
+}
+@media (max-width:1000px) {
+    .projects .container .card {
+        margin: 0.4rem;
+    }
+    
+}

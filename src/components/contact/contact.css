@@ -1,0 +1,73 @@
+.contact {
+    margin: 5rem 8rem 0 4rem;
+}
+.contact span {
+    color: var(--secondary-color);
+}
+.contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin: 1rem 3rem 0 3rem;
+}
+.contact .container p,.contact .container a,.contact .container h2 {
+    margin: 2rem;
+    text-align: center;
+}
+.contact .container .text {
+    font-size: 18px;
+    margin: 0 4rem;
+}
+.contact .container p {
+   color: var(--gray-color);
+}
+.contact .container .icon {
+    /**/
+}
+.contact .container  h2 {
+    font-size: 40px;
+    color: var(--light-color);
+}
+.contact .container a {
+padding: 1rem 2rem;
+color: var(--secondary-color);
+border: 1px solid var(--secondary-color);
+background-color: transparent;
+border-radius: 5px;
+margin-top: 3rem;
+cursor: pointer;
+transition: transform .4s; 
+    
+}
+.contact .container a:hover {
+    transform: scale(1.02);
+    transition: transform .4s; 
+    opacity: 0.8;
+}
+.header-bottom button:hover {
+    opacity: 0.8;
+    background-color: #192f50;
+    
+}
+.contact .container .icon {
+    font-size: 3rem;
+}
+@media (max-width:600px) {
+    .contact {
+        margin: 5rem 1rem 0 1rem;
+    }
+    .contact .container p,.contact .container a,.contact .container h2 {
+        margin: 2rem 0;
+    }
+    .contact h2 {
+        text-align: center;
+        
+    }
+    .contact .container .text {
+        margin: 0;
+    }
+    .contact .container  h2  {
+        font-size: 23px;
+    }
+}

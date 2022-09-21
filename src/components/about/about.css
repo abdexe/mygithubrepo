@@ -1,0 +1,131 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 8rem 0 4rem;
+}
+.about .box {
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+    transition: opacity .25s linear;
+    margin-bottom: 16rem;
+}
+
+.about .box:hover::before{
+    z-index: -300;
+    transition: opacity .25s linear;
+}
+.about .box:hover .line {
+    transform: translateY(0);
+    transition: transform .25s linear;
+}
+.about img {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    
+}
+.about .box:hover .about .box::before {
+    opacity: 0;
+}
+.about__left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+.about__left p {
+    margin-top: 2rem;
+    line-height: 2rem;
+    color: var(--gray-color);
+}
+.about__left span {
+    color: var(--secondary-color);
+}
+.about-right .box .line {
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--secondary-color);
+    transform: translate(3rem,3rem);
+    position: absolute;
+    z-index: -100;
+    border-radius: 5px;
+    transition: transform .25s linear;
+}
+.about__left .softwares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about__left .softwares ul {
+    margin-right: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.about__left .softwares ul li {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.softwares .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+} 
+.softwares .icon:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:600px) {
+ .about {
+    flex-direction: column;
+    margin: 5rem 1rem 0 4rem;
+    align-items: center;
+    justify-content: center;
+ }
+ .about__left {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ .softwares ul{
+    align-items: center;
+
+ }
+ .about .box {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+ }
+ 
+ .about-right {
+    margin-top:2rem;
+    margin-right: 5rem;
+ }
+ .about .box::before {
+    display: none;
+ }
+}
+@media (max-width:900px) {
+    .about {
+        flex-direction: column;
+    }
+    .about .box {
+        width: 25rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    .about-right {
+        margin-top:2rem;
+        margin-right: 5rem;
+     }
+}
