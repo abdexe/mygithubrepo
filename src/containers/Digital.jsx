@@ -4,7 +4,7 @@ const Digital = () => {
   return (
     <div className="container__work">
      <h2 className='text-blue'>Drawing & Digital Art</h2>
-     <div className="container-branding art">
+     <div className="container-branding art test">
      <div className="card">
             <img src={M} alt="" />
           </div>
