@@ -64,7 +64,6 @@ const Projects = () => {
     </div>
     {/* second section */}
     <div className='projects' id='projects'>
-      <h2><span>02.</span> Projects I've Done</h2>
       <div className="container">
          <div className="card">
           <img src='' alt="" />
