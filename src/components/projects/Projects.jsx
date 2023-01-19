@@ -21,7 +21,7 @@ const Projects = () => {
       <div className="container">
          <div className="card">
           <img src='' alt="" />
-          <h3>Visual Identity</h3>
+          <h3>OPENION WEBSITE</h3>
           <p>logo, typography, and other design components that makes a 
             brand stand out from competitors, and recognizable to consumers </p>
           <div className="softwares">
